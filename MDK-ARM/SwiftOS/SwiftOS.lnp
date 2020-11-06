@@ -1,0 +1,25 @@
+--cpu Cortex-M4.fp
+"swiftos\startup_stm32f429xx.o"
+"swiftos\main.o"
+"swiftos\stm32f4xx_it.o"
+"swiftos\stm32f4xx_hal_msp.o"
+"swiftos\stm32f4xx_hal_tim.o"
+"swiftos\stm32f4xx_hal_tim_ex.o"
+"swiftos\stm32f4xx_hal_rcc.o"
+"swiftos\stm32f4xx_hal_rcc_ex.o"
+"swiftos\stm32f4xx_hal_flash.o"
+"swiftos\stm32f4xx_hal_flash_ex.o"
+"swiftos\stm32f4xx_hal_flash_ramfunc.o"
+"swiftos\stm32f4xx_hal_gpio.o"
+"swiftos\stm32f4xx_hal_dma_ex.o"
+"swiftos\stm32f4xx_hal_dma.o"
+"swiftos\stm32f4xx_hal_pwr.o"
+"swiftos\stm32f4xx_hal_pwr_ex.o"
+"swiftos\stm32f4xx_hal_cortex.o"
+"swiftos\stm32f4xx_hal.o"
+"swiftos\stm32f4xx_hal_exti.o"
+"swiftos\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "SwiftOS\SwiftOS.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SwiftOS.map" -o SwiftOS\SwiftOS.axf
